@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Help Desk</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header>
@@ -141,24 +141,20 @@
 
     <section id="contato" class="contato">
         <h2>Contato</h2>
-        <form id="contactForm">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
+            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea><br>
             <button type="submit">Enviar</button>
         </form>
+    
+        <div id="status"></div>
     </section>
 
     <footer>
         <p>&copy; 2025 Smart Help Desk. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="js/Script.js"></script>
+    <script src="../js/Script.js"></script>
 </body>
 </html>
