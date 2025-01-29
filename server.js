@@ -12,6 +12,10 @@ app.use(bodyParser.json());
 
 // Servir arquivos estáticos da pasta "public"
 app.use(express.static(path.join(__dirname, 'public')));
+app.get('/',(req, res) => {
+    res.send(__dirname, "Public", "Index.html");
+});
+
 
 // Rota para lidar com o envio do formulário
 app.post('/send-email', (req, res) => {
@@ -36,4 +40,4 @@ app.post('/send-email', (req, res) => {
 // Inicializa o servidor
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
-});
+  });
