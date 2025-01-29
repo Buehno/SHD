@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-const { sendEmail } = require('./emailService'); // Importando a função sendEmail
+const { sendEmail } = require('./scr/emailService'); // Importando a função sendEmail
 
 const app = express();
 const port = 3000;
