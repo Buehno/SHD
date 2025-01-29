@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Help Desk</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/Script.js" defer></script>
 </head>
 <body>
     <header>
@@ -53,7 +56,7 @@
                 
 
        
-<img src="/static/Conecte-se.png" alt="Ícone Conecte-se">
+<img src="static/Conecte-se.png" alt="Ícone Conecte-se">
                     
                   
 <h3>Conecte-se</h3>
@@ -62,7 +65,7 @@
                 
     
 <div class="feature">
-                    <img src="/static/Organize-se.png" alt="Ícone Organize-se">
+                    <img src="static/Organize-se.png" alt="Ícone Organize-se">
                     
           
 
@@ -83,7 +86,7 @@
                    
 
        
-<img src="/static/Escale.png" alt="Ícone Escale">
+<img src="static/Escale.png" alt="Ícone Escale">
                     
           
 <h3>Escale</h3>
@@ -141,10 +144,10 @@
 
     <section id="contato" class="contato">
         <h2>Contato</h2>
-        <form id="contact-form">
-            <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
-            <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
-            <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea><br>
+        <form id="emailForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     
