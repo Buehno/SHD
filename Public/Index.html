@@ -21,7 +21,7 @@
     </header>
 
     <section class="hero">
-        <img  src="/static/Hero banner.png" alt="Hero Image">
+        <img  src="/Public/static/Hero banner.png" alt="Hero Image">
     </section>
 
     <section id="servicos" class="servicos">
@@ -144,11 +144,14 @@
 
     <section id="contato" class="contato">
         <h2>Contato</h2>
-        <form id="emailForm">
+        <form id="emailForm" action="https://api.staticforms.xyz/submit" method="post">
             <input type="text" id="name" placeholder="Seu Nome" required>
             <input type="email" id="email" placeholder="Seu E-mail" required>
             <textarea id="message" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="cf289a79-faff-4261-b706-ea4d0ef508c0"> 
+            <input type="hidden" name="redirectTo" value="/Public/popup.html">
         </form>
     
         <div id="status"></div>
